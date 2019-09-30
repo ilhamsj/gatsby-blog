@@ -7,10 +7,8 @@ import { Styled } from "theme-ui"
 
 export default () => (
   <Fragment>
-    This is where <Styled.a href="http://example.com/">your name</Styled.a>
-    {` `}
-    goes.
+    <Styled.a href="http://example.com/">Ilham Saputra Jati</Styled.a>
     <br />
-    Or whatever, you make the rules.
+    Laravel x Vue.js Lover
   </Fragment>
 )
