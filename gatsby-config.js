@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: `Ilham Saputra Jati Blog`,
     author: `Ilham Saputra Jati`,
-    description: `My site description...`,
+    description: `Menuliskan setiap rintangan baris kode yang saya alami, berisi cheatsheet dan solusi`,
     social: [
       {
         name: `twitter`,
@@ -18,6 +18,10 @@ module.exports = {
       {
         name: `github`,
         url: `https://github.com/ilhamsj`,
+      },
+      {
+        name: `linkedIn`,
+        url: `https://www.linkedin.com/in/ilhamsj`,
       },
     ],
   },
