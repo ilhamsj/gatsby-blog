@@ -37,3 +37,10 @@ DB_PASSWORD	    = e9123402
 ## Notes
 Closure atau anonymous function  
 `Sebuah fungsi yang ada di konsep OOP yang tidak memiliki nama alias anonymous`
+
+```php
+    $img = \File::allFiles(public_path('images'));
+    foreach ($img as $key => $value) {
+        echo $value->getFilename() . '<br/>';
+    }
+```

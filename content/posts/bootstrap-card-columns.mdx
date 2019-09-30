@@ -3,6 +3,7 @@ title: Bootstrap Card Columns
 date: 2019-09-30
 ---
 
+## The HTML
 ```php
 <div class="container py-4">
     <div class="card-columns">
@@ -21,12 +22,17 @@ date: 2019-09-30
     </div>
 </div>
 ```
+`card-img-overlay p-0`
+
+## The CSS
 ```css
     .card-img-overlay .card-body {
         background-color: rgba(0,0,0,.5);
     }
 ```
+CSS Opacity
 
+## The Javascript
 ```javascript
     $('.card').hover(function () {
             $(this).find('.card-body').slideToggle();
