@@ -1,0 +1,39 @@
+---
+title: Bootstrap Card Columns
+date: 2019-09-30
+---
+
+```php
+<div class="container py-4">
+    <div class="card-columns">
+        @foreach ($items as $item)
+            <div class="card" id="kegiatan{{ $item->id }}">
+                <img src="{{ secure_asset('storage/images/'.$item->image) }}" class="card-img-top"> 
+                <div class="card-img-overlay d-flex align-items-end p-0">
+                    <div class="card-body collapse kegiatan{{$item->id}}">
+                        <a href="{{ route('article.show', $item->slug)}}" class="text-white">
+                            {{$item->title}}
+                        </a>
+                    </div>
+                </div>   
+            </div>
+        @endforeach
+    </div>
+</div>
+```
+```css
+    .card-img-overlay .card-body {
+        background-color: rgba(0,0,0,.5);
+    }
+```
+
+```javascript
+    $('.card').hover(function () {
+            $(this).find('.card-body').slideToggle();
+        }, function () {
+            $(this).find('.card-body').slideToggle();
+        }
+    );
+```
+
+

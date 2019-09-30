@@ -1,0 +1,39 @@
+---
+title: Laravel Cheatsheet
+date: 2019-09-30
+---
+
+- [Deploy to Heroku](#deploy-to-heroku)
+    - [Procfile](#procfile)
+    - [Deploy to Github](#deploy-to-github)
+    - [Connect to Heroku](#connect-to-heroku)
+    - [Deploy](#deploy)
+    - [Ignite Clear DB](#ignite-clear-db)
+    - [Set Env](#set-env)
+- [Notes](#notes)
+## Deploy to Heroku
+### Procfile
+```
+web: vendor/bin/heroku-php-apache2 public/
+```
+
+### Deploy to Github
+### Connect to Heroku 
+### Deploy
+### Ignite Clear DB
+### Set Env
+```env
+mysql://username:password@hostname/database_name?reconnect=true  
+mysql://bef07fa2dcb4fe:a2399eb2@us-cdbr-iron-east-02.cleardb.net/heroku_f8ca88fae49678d?reconnect=true
+
+DB_CONNECTION	= mysql
+DB_PORT		    = 3306
+DB_HOST		    = us-cdbr-iron-east-02.cleardb.net
+DB_DATABASE	    = heroku_291e9d3bdbe8781
+DB_USERNAME	    = b136f2454a82c4
+DB_PASSWORD	    = e9123402
+```
+
+## Notes
+Closure atau anonymous function  
+`Sebuah fungsi yang ada di konsep OOP yang tidak memiliki nama alias anonymous`
