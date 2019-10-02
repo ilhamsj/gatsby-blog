@@ -1,0 +1,31 @@
+---
+title: jQuery Cheatsheet
+date: 2019-10-02
+---
+
+# The different between jquery.slim.min & jquery.min.js
+jquery slim disable the animation
+use another jQuery like jquery.min.js
+
+## TypeError 
+
+```javascript
+(index):257 Uncaught TypeError: $(...).slideToggle is not a function
+    at HTMLButtonElement.<anonymous> ((index):257)
+    at HTMLButtonElement.dispatch (jquery.slim.min.js:2)
+    at HTMLButtonElement.v.handle (jquery.slim.min.js:2)
+(anonymous)	@	(index):257
+dispatch	@	jquery.slim.min.js:2
+
+```
+
+## Animate Click Anchor
+
+```javascript
+    $('a').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 700);
+        return false;
+    });
+```

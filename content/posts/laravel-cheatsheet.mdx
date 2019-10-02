@@ -44,3 +44,15 @@ DB_PASSWORD	    = e9123402
         echo $value->getFilename() . '<br/>';
     }
 ```
+
+## Upload to Dropbox
+1. Install Flysystem Dropbox
+1. open `filesystem.php` tambahkan Dropbox
+    ```php
+    'dropbox' => [
+        'driver' => 'dropbox',
+        'authorizationToken => env('DROPBOX_ACCESS_TOKEN')'
+    ]
+    ```
+1. `php artisan make:provider DropboxServiceProvider`
+add `Storage, filesystem, Dropbox client, dropbox adapter`
